@@ -357,7 +357,8 @@ section .title::after {
 }
 
 .services .serv-content .card {
-    width: calc(33% - 20px);
+    width: 350px;
+    height: 250px;
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -479,7 +480,11 @@ section .title::after {
 }
 
 .skills-content .right .php::before {
-    width: 50%;
+    width: 60%;
+}
+
+.skills-content .right .csharp::before {
+    width: 20%;
 }
 
 .skills-content .right .mysql::before {
@@ -490,6 +495,8 @@ section .title::after {
 /* teams section styling */
 
 .teams .carousel .card {
+    width: auto;
+    height: 300px;
     background: #222;
     border-radius: 6px;
     padding: 50px 35px;

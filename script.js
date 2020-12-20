@@ -35,14 +35,14 @@ $(document).ready(function() {
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Aprendiz", "Desenvolvedor", "Designer"],
+        strings: ["Aprendiz", "Desenvolvedor"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Aprendiz", "Desenvolvedor", "Designer"],
+    var typed1 = new Typed(".typing-2", {
+        strings: ["Aprendiz", "Desenvolvedor"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -69,4 +69,5 @@ $(document).ready(function() {
             }
         }
     });
+
 });
