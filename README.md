@@ -7,10 +7,10 @@
 
 ### Nele contém
   - Repositórios do Github
-    - Experiências Profissionais
+  - Experiências Profissionais
   - Projetos realizados
-    - Sobre Mim
+  - Sobre Mim
   - Meus Serviços
-    - Minhas Habilidades
+  - Minhas Habilidades
   - Cursos Realizados
-    - Contato
+  - Contato
