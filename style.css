@@ -467,6 +467,10 @@ section .title::after {
     background: crimson;
 }
 
+.skills-content .right .angular::before {
+    width: 10%;
+}
+
 .skills-content .right .html::before {
     width: 50%;
 }
