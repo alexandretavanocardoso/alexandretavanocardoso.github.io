@@ -211,6 +211,17 @@ section .title::after {
 }
 
 
+/* repositorys */
+
+.number-repository {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+
 /* home section styling */
 
 .home {
