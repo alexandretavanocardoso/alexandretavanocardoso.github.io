@@ -479,7 +479,7 @@ section .title::after {
 }
 
 .skills-content .right .angular::before {
-    width: 8%;
+    width: 20%;
 }
 
 .skills-content .right .html::before {
