@@ -495,8 +495,12 @@ section .title::after {
     width: 20%;
 }
 
+.skills-content .right .figma::before {
+    width: 30%;
+}
+
 .skills-content .right .php::before {
-    width: 60%;
+    width: 40%;
 }
 
 .skills-content .right .csharp::before {
