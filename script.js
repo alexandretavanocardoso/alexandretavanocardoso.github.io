@@ -1,3 +1,8 @@
+var txtNome = document.getElementById("txtNome");
+var txtEmail = document.getElementById("txtEmail");
+var txtDesc = document.getElementById("txtDesc");
+var txtMensagem = document.getElementById("txtMensagem");
+
 $(document).ready(function() {
     $(window).scroll(function() {
         // sticky navbar on scroll script
@@ -14,6 +19,8 @@ $(document).ready(function() {
             $('.scroll-up-btn').removeClass("show");
         }
     });
+
+    carregarDivBotaoWhats();
 
     // slide-up script
     $('.scroll-up-btn').click(function() {
@@ -71,3 +78,50 @@ $(document).ready(function() {
     });
 
 });
+
+function onClick_AlternarEntreContatos(codigo) {
+    if (codigo == 1) {
+        $("#divEmail").show();
+        $("#divWhatsapp").hide();
+    } else {
+        $("#divWhatsapp").show();
+        $("#divEmail").hide();
+    }
+}
+
+function onClick_EnviarEmail() {
+    if (txtNome.value == "" || txtEmail.value == "" || txtDesc.value == "") {
+        tata.error('Erro', 'Falha ao enviar o e-mail!', {
+            position: 'tm',
+            duration: 4000,
+            animate: 'slide'
+        });
+    } else {
+        tata.success('Sucesso', 'E-mail enviado com sucesso!', {
+            position: 'tm',
+            duration: 4000,
+            animate: 'slide'
+        });
+    }
+}
+
+function onClick_EnviarMensagemWhatsapp() {
+    if (txtMensagem.value != "") {
+        $("#linkWhats").prop("href", `https://wa.me/5514999074567?text=${txtMensagem.value.replace(" ", "%20")}`);
+    } else {
+        tata.error('Erro', 'Por favor, escreva sua mensagem!', {
+            position: 'tm',
+            duration: 4000,
+            animate: 'slide'
+        });
+    }
+}
+
+function carregarDivBotaoWhats() {
+    var html = "";
+
+    html += "<a onclick='onClick_EnviarMensagemWhatsapp()' href='javascript:void(0)' class='btn btn-danger' id='linkWhats'><i class='fab fa-whatsapp'></i>Enviar WhatsApp</a>";
+
+    $("#botaoWhats").empty();
+    $("#botaoWhats").append(html);
+}
