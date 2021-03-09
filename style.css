@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -872,4 +876,43 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+#txtMensagem,
+#txtDesc,
+#txtEmail,
+#txtNome {
+    border-width: 2px;
+    border-top-color: crimson;
+    border-right-color: black;
+    border-bottom-color: crimson;
+    border-left-color: black;
+    border-radius: 6px;
+}
+
+#txtMensagem,
+#txtDesc,
+#txtEmail,
+#txtNome {
+    border-width: 2px;
+    border-top-color: crimson;
+    border-right-color: black;
+    border-bottom-color: crimson;
+    border-left-color: black;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 5px;
+}
+
+.entreEmContato {
+    width: 70%;
+    border-bottom: 2px solid black;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 500;
 }
